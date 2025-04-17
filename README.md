@@ -33,38 +33,30 @@ BodyLength: Total characters in the email.
 WordCount: Number of words.
 Generated a correlation heatmap to analyze relationships.
 
-⚖️ Step 5: Class Distribution
+⚖️ Step 5: Class Distribution  
+
 Checked balance in the target labels (Label).
-
 Confirmed that the dataset was slightly imbalanced, but still manageable.
-
 ✏️ Step 6: Text Vectorization
+
 Used TF-IDF Vectorizer from sklearn to convert email text into numerical form.
-
 Removed English stop words.
-
 Used the top 5000 features.
-
 No need for additional scaling due to TF-IDF properties.
 
 🤖 Step 7: Model Building
+
 Train-Test Split: 80% train, 20% test.
-
 Two models trained:
-
 Logistic Regression
-
 Multinomial Naive Bayes
 
 📈 Step 8: Model Evaluation
+
 Evaluated both models using:
-
 Accuracy
-
 Precision
-
 Recall
-
 F1 Score
 
 ✅ Results:
@@ -76,10 +68,8 @@ Naive Bayes	Very Good (but slightly lower)
 📌 Logistic Regression was selected as the final model due to better overall metrics.
 
 📃 Step 9: Final Report
+
 The project effectively demonstrates the use of NLP and machine learning for spam detection:
-
 Data Preprocessing: Clean and balanced
-
 Feature Engineering: TF-IDF vectorization
-
 Model Performance: Logistic Regression performed with high accuracy and F1 score
